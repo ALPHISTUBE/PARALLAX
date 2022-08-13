@@ -88,7 +88,7 @@ section::before{
     height: 200px;
     background: linear-gradient(to top, rgb(23, 0, 47), transparent);
     z-index: 1000;
-    margin-top: 620px;
+    margin-top: 500px;
 }
 
 section::after{
