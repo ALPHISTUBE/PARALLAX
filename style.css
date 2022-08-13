@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body{
+    min-height: 100vw;
+    background: linear-gradient(rgb(3, 0, 67), rgb(14, 0, 28));
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30000;
+}
+
+header .logo{
+    color: white;
+    font-family: "DynaPuff", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: white;
+    color: rgb(103, 28, 173);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    width: 100vh;
+    padding-top: 100px;
+}
+
+section img{
+    left: 0;
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 202.2%;
+    height: 200px;
+    background: linear-gradient(to top, rgb(23, 0, 47), transparent);
+    z-index: 1000;
+    margin-top: 620px;
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    width: 202.2%;
+    height: 200px;
+    background: linear-gradient(to bottom, #1b0039, transparent);
+    z-index: 1000;
+}
+
+
+section img#sky, #land1{
+    position: absolute;
+    width: 202.2%;
+    height: 100%;
+}
+
+section img#star{
+    position: absolute;
+    margin-bottom: 100px;
+    width: 202.2%;
+    height: 110%;
+}
+
+section img#ocean{
+    position: absolute;
+    margin-top: 400px;
+    width: 202.2%;
+    height: 30%;
+}
+
+section img#text{
+    position: absolute;
+    margin-top: 310px;
+    margin-left: 580px;
+    width: 90%;
+}
+
+section img#land2{
+    position: absolute;
+    margin-top: 410px;
+    margin-right: 100px;
+    width: 202%;
+    height: 50%;
+}
+
+
+section img#moon{
+    position: absolute;
+    mix-blend-mode: screen;    
+    width: 30%;
+    height: 30%;
+    margin-top: 150px;
+    margin-left: 950px;
+}
+
+section #bird{ 
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    margin-top: 250px;
+    margin-left: 1050px;
+}
+
+div .sce img#star1{
+    position: absolute;
+    width: 202.2%;
+    height: 100%;
+}
+
+h2#t1{
+    color: white;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-size: 4em; 
+    text-align: center;
+}
+
+h2#t2{
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2#t3{
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+
+div .sce, p{  
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    font-size: 1.5em;   
+}
+
+div .sce, a{
+    color: white;
+}

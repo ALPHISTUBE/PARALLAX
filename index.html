@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PARALLAX</a>
+    
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#sce1">WORK</a></li>
+            <li><a href="#sce2">ABOUT</a></li>
+            <li><a href="#sce3">Credit</a></li>
+        </ul>        
+    </header>
+
+    <section>
+        <img src="GPX/Asset 9.png" id="sky">
+        <img src="GPX/Asset 8.png" id="star">
+        <img src="GPX/Asset 3.png" id="moon">
+        <img src="GPX/Asset 7.png" id="ocean">
+        <img src="GPX/Asset 10.png" id="text">
+        <img src="GPX/Asset 4.png" id="bird">
+        <img src="GPX/Asset 6.png" id="land1">
+        <img src="GPX/Asset 5.png" id="land2">
+    </section>
+
+    <script>
+
+        let star = document.getElementById("star")
+        let moon = document.getElementById("moon")
+        let bird = document.getElementById("bird")
+        let text = document.getElementById("text")
+
+        window.addEventListener("scroll", function(){
+            let val = window.scrollY;
+            star.style.left = val * 0.7 + "px";
+            moon.style.top = val * 0.5 + 'px';
+            moon.style.left = -val * 0.3 + 'px';
+            bird.style.left = val * 0.3 + 'px';
+            bird.style.top = val * 0.5 + 'px';
+            text.style.top = -val + 'px';
+        })
+
+    </script>
+           
+    <div class="sce" id="sce">
+        <h2 id="t1">STELLAR PARALLAX</h2>
+        <p>Stellar parallax is the apparent shift of position of any nearby star against the background of distant objects. Created by the different <a href="https://en.wikipedia.org/wiki/Orbital_positions_of_Earth">orbital positions of Earth</a>, the extremely small observed shift is largest at time intervals of about six months, when Earth arrives at opposite sides of the Sun in its orbit, giving a baseline distance of about two <a href="https://en.wikipedia.org/wiki/Astronomical_unit">astronomical units</a> between observations. The parallax itself is considered to be half of this maximum, about equivalent to the observational shift that would occur due to the different positions of Earth and the Sun, a baseline of one astronomical unit (AU).
+        <br><br> Stellar parallax is so difficult to detect that its existence was the subject of much debate in astronomy for hundreds of years. Thomas Henderson, Friedrich Georg Wilhelm von Struve, and Friedrich Bessel made first successful parallax measurements in 1832-1838, for the stars alpha Centauri, Vega, and 61 Cygni. <br> <p id="t2">Reference : <a href="https://en.wikipedia.org/wiki/Stellar_parallax">Wikipedia</a></p></p>
+    </div>
+    <div class="sce" id="sce1">
+        <h2 id="t2">ABOUT</h2>
+        <p>Hi! My name is Rafawat Sholaiman Alphi. I like web development :)</p>
+    </div>
+    <div class="sce" id="sce3"></div>
+        <h2 id="t3">Credit</h2>
+        <p>Website Created By ALPHI</p>
+        <p>Vector Design By <a href='https://www.freepik.com/vectors/night-sea'>Upklyak</a> <br><br><br><br></p>
+    </div>
+    
+</body>
+</html>
